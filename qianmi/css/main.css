@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* 公共样式 */
 /*body,p,div {
@@ -399,3 +400,273 @@ fieldset[disabled] .btn-mfsy.active {
   color: #F8B600; 
   background-color: #ffffff; 
 }
+=======
+
+/* 公共样式 */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+@font-face {
+  font-family: 'yjg';
+  src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+
+
+
+/*头部样式*/
+#header {
+  height: 60px;
+  line-height: 60px;
+  z-index:10;
+}
+
+#header > .topbar {
+  font-size: 12px;
+  border-bottom: 1px solid #c0c0c0;
+  line-height: 60px;
+}
+
+#header .btn-yjg {
+  color: #fff;
+}
+
+
+/* 通栏广告轮播 */
+
+#main_ad {
+  margin-top: 10px;
+}
+
+#main_ad > .carousel-inner > .item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color:#888;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#888;
+
+}
+
+/* 当屏幕宽度大于768时，将元素高度设置为700px */
+
+@media (min-width: 768px) {
+  #main_ad > .carousel-inner > .item {
+    height: 400px;
+  }
+}
+
+#main_ad > .carousel-inner > .item > img {
+  width: 100%;
+}
+
+
+/*掌上SaaS交易系统*/
+
+
+
+
+
+
+
+
+
+
+
+.jyxt {
+  font-size: 18px;
+  border-bottom: 1px solid #c0c0c0;
+  line-height: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+
+}
+
+
+
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+
+
+
+
+
+/* Bootstrap扩展样式 */
+
+.panel-czbk {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 1px 1px 5px #ccc;
+  color: #777;
+}
+
+.panel-czbk p {
+  margin-bottom: 0;
+}
+
+.panel-czbk.actived {
+  background-color: #e92322;
+  color: #fff;
+}
+
+.panel-czbk.actived::before {
+  content: "\e915";
+  font-family: yjg;
+  font-size: 50px;
+  position: absolute;
+  top: -11px;
+  left: 15px;
+}
+
+.panel-czbk.disabled {
+  background-color: #e0e0e0;
+}
+
+.panel-czbk > .panel-heading {
+  float: right;
+  width: 120px;
+  padding: 45px 0;
+  height: 160px;
+  border-left: 1px dashed #c0c0c0;
+  text-align: center;
+  position: relative;
+}
+
+.panel-czbk > .panel-heading::before,
+.panel-czbk > .panel-heading::after {
+  content: ' ';
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  position: absolute;
+}
+
+.panel-czbk > .panel-heading::before {
+  top: -8px;
+  left: -8px;
+}
+
+.panel-czbk > .panel-heading::after {
+  bottom: -8px;
+  left: -8px;
+  box-shadow: 0 2px 1px #ccc inset;
+}
+
+.panel-czbk > .panel-heading > p > strong {
+  font-size: 30px;
+}
+
+.panel-czbk > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+
+.panel-czbk > .panel-heading > .tooltips {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 26px;
+}
+
+.panel-czbk > .panel-heading .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 3px;
+  margin: 2px;
+}
+
+.panel-czbk > .panel-heading .badge-one {
+  color: #e92322;
+  border-color: #e92322;
+}
+
+.panel-czbk > .panel-heading .badge-two {
+  color: #399;
+  border-color: #399;
+}
+
+.panel-czbk > .panel-body {
+  margin-right: 120px;
+  height: 160px;
+}
+
+.panel-czbk > .panel-body > h4,
+.panel-czbk > .panel-body > .row > div {
+  margin: 5px 0;
+}
+
+.btn-yjg {
+  color: #ffffff;
+  background-color: #E92322;
+  border-color: #DB3B43;
+}
+
+.btn-yjg:hover,
+.btn-yjg:focus,
+.btn-yjg:active,
+.btn-yjg.active,
+.open .dropdown-toggle.btn-yjg {
+  color: #ffffff;
+  background-color: #E92322;
+  border-color: #DB3B43;
+}
+
+.btn-yjg:active,
+.btn-yjg.active,
+.open .dropdown-toggle.btn-yjg {
+  background-image: none;
+}
+
+.btn-yjg.disabled,
+.btn-yjg[disabled],
+fieldset[disabled] .btn-yjg,
+.btn-yjg.disabled:hover,
+.btn-yjg[disabled]:hover,
+fieldset[disabled] .btn-yjg:hover,
+.btn-yjg.disabled:focus,
+.btn-yjg[disabled]:focus,
+fieldset[disabled] .btn-yjg:focus,
+.btn-yjg.disabled:active,
+.btn-yjg[disabled]:active,
+fieldset[disabled] .btn-yjg:active,
+.btn-yjg.disabled.active,
+.btn-yjg[disabled].active,
+fieldset[disabled] .btn-yjg.active {
+  background-color: #E92322;
+  border-color: #DB3B43;
+}
+
+.btn-yjg .badge {
+  color: #E92322;
+  background-color: #ffffff;
+}
+
+>>>>>>> 1acb4d372c9b7d3d3650fe758b6cf56b932fd33f
